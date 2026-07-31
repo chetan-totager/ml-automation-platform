@@ -1,13 +1,13 @@
-# 🤖 EURON ML Automation
+# 🤖  ML Automation
 
 <div align="center">
 
-![EURON ML Automation](https://img.shields.io/badge/EURON-ML%20Automation-667eea?style=for-the-badge&logo=robot&logoColor=white)
+![ ML Automation](https://img.shields.io/badge/-ML%20Automation-667eea?style=for-the-badge&logo=robot&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.9+-3776ab?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.31-ff4b4b?style=for-the-badge&logo=streamlit&logoColor=white)
 
-**Automated Machine Learning System by Euron**
+**Automated Machine Learning System by **
 
 *Upload • Analyze • Train • Deploy*
 
@@ -17,7 +17,7 @@
 
 ## 📋 Overview
 
-EURON ML Automation is a comprehensive, end-to-end automated machine learning platform that simplifies the entire ML workflow. From data upload to model deployment, this system handles everything automatically while providing detailed insights and comparisons.
+ ML Automation is a comprehensive, end-to-end automated machine learning platform that simplifies the entire ML workflow. From data upload to model deployment, this system handles everything automatically while providing detailed insights and comparisons.
 
 ### ✨ Key Features
 
@@ -42,7 +42,7 @@ EURON ML Automation is a comprehensive, end-to-end automated machine learning pl
 
 1. **Clone or navigate to the project directory**
 ```bash
-cd euron_ml_automation
+cd _ml_automation
 ```
 
 2. **Create and activate virtual environment**
@@ -141,7 +141,7 @@ streamlit run app.py --server.port 8501
 ## 🏗️ Architecture
 
 ```
-euron_ml_automation/
+_ml_automation/
 ├── backend/
 │   └── main.py              # FastAPI backend with ML logic
 ├── frontend/
@@ -232,7 +232,7 @@ import pickle
 import pandas as pd
 
 # Load the trained model
-with open('euron_best_model.pkl', 'rb') as f:
+with open('_best_model.pkl', 'rb') as f:
     model_data = pickle.load(f)
 
 # Extract components
@@ -283,7 +283,7 @@ print(predictions)
 
 ## 📝 License
 
-Copyright © 2024 Euron (Engagesphere Technology Private Limited)
+Copyright © 2024  (Engagesphere Technology Private Limited)
 
 All rights reserved.
 
@@ -292,15 +292,15 @@ All rights reserved.
 ## 🤝 Support
 
 For support and inquiries:
-- **Company**: Euron (Engagesphere Technology Private Limited)
+- **Company**:  (Engagesphere Technology Private Limited)
 - **Location**: Bengaluru, India
-- **Website**: [euron.one](https://euron.one)
+- **Website**: [.one](https://.one)
 
 ---
 
 <div align="center">
 
-**Built with ❤️ by Euron**
+**Built with ❤️ by chetan **
 
 *Empowering businesses with intelligent automation*
 
