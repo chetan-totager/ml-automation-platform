@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# EURON ML Automation - Startup Script
+# chetan ML Automation - Startup Script
 # This script starts both the FastAPI backend and Streamlit frontend
 
-echo "🚀 Starting EURON ML Automation..."
+echo "🚀 Starting chetan ML Automation..."
 echo "=================================="
 
 # Colors for output
@@ -47,7 +47,7 @@ cd ..
 
 echo ""
 echo "=================================="
-echo -e "${GREEN}🎉 EURON ML Automation is running!${NC}"
+echo -e "${GREEN}🎉 chetan ML Automation is running!${NC}"
 echo ""
 echo "📊 Frontend (Streamlit): http://localhost:8501"
 echo "🔧 Backend (FastAPI):    http://localhost:8000"
