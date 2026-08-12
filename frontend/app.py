@@ -1,5 +1,5 @@
 """
-EURON ML Automation - Professional SaaS Frontend
+chetan ML Automation - Professional SaaS Frontend
 Enterprise-grade Machine Learning Platform
 """
 
@@ -17,19 +17,19 @@ from io import StringIO
 
 # Page Configuration
 st.set_page_config(
-    page_title="Euron ML Platform",
+    page_title="chetan ML Platform",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded"
 )
 
-# Professional Euron Theme CSS
+# Professional chetan Theme CSS
 st.markdown("""
 <style>
     /* Import Inter font */
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
     
-    /* Root variables - Euron Design System */
+    /* Root variables - chetan Design System */
     :root {
         --primary-blue: #0A66C2;
         --primary-hover: #004182;
@@ -80,7 +80,7 @@ st.markdown("""
     }
     
     /* Card styling */
-    .euron-card {
+    .chetan-card {
         background: #FFFFFF !important;
         border: 1px solid #E5E7EB;
         border-radius: 8px;
@@ -89,7 +89,7 @@ st.markdown("""
         color: #111827 !important;
     }
     
-    .euron-card-header {
+    .chetan-card-header {
         font-size: 18px;
         font-weight: 600;
         color: #111827 !important;
@@ -99,7 +99,7 @@ st.markdown("""
     }
     
     /* Header styling */
-    .euron-header {
+    .chetan-header {
         background: #FFFFFF !important;
         border: 1px solid #E5E7EB;
         border-radius: 8px;
@@ -107,14 +107,14 @@ st.markdown("""
         margin-bottom: 1.5rem;
     }
     
-    .euron-logo {
+    .chetan-logo {
         display: flex;
         align-items: center;
         gap: 12px;
         margin-bottom: 0.5rem;
     }
     
-    .euron-logo-icon {
+    .chetan-logo-icon {
         width: 40px;
         height: 40px;
         background: #0A66C2 !important;
@@ -127,7 +127,7 @@ st.markdown("""
         font-size: 20px;
     }
     
-    .euron-title {
+    .chetan-title {
         font-size: 28px;
         font-weight: 700;
         color: #111827 !important;
@@ -135,7 +135,7 @@ st.markdown("""
         line-height: 1.2;
     }
     
-    .euron-subtitle {
+    .chetan-subtitle {
         font-size: 14px;
         color: #6B7280 !important;
         margin: 0;
@@ -789,7 +789,7 @@ st.markdown("""
     }
     
     /* Exception for muted text */
-    .caption-text, .euron-subtitle, .metric-label {
+    .caption-text, .chetan-subtitle, .metric-label {
         color: #6B7280 !important;
     }
     
@@ -947,7 +947,7 @@ st.markdown("""
     }
     
     /* Exception only for specific muted elements */
-    .caption-text, .euron-subtitle, .metric-label, 
+    .caption-text, .chetan-subtitle, .metric-label, 
     [class*="caption"], [class*="muted"], [class*="secondary"] {
         color: #6B7280 !important;
     }
@@ -1088,12 +1088,12 @@ if 'eda_generated' not in st.session_state:
 def display_header():
     """Display the professional header"""
     st.markdown("""
-    <div class="euron-header">
-        <div class="euron-logo">
-            <div class="euron-logo-icon">E</div>
+    <div class="chetan-header">
+        <div class="chetan-logo">
+            <div class="chetan-logo-icon">E</div>
             <div>
-                <h1 class="euron-title">Euron ML Platform</h1>
-                <p class="euron-subtitle">Enterprise Machine Learning Automation</p>
+                <h1 class="chetan-title">chetan ML Platform</h1>
+                <p class="chetan-subtitle">Enterprise Machine Learning Automation</p>
             </div>
         </div>
     </div>
@@ -1260,7 +1260,7 @@ def generate_eda_report():
     
     with col1:
         st.markdown("""
-        <div class="euron-card">
+        <div class="chetan-card">
             <p style="color: #111827; font-size: 14px; margin-bottom: 0.5rem;">Generate a comprehensive EDA report including:</p>
             <ul style="color: #6B7280; font-size: 14px; margin: 0; padding-left: 1.5rem;">
                 <li>Dataset overview and alerts</li>
@@ -1708,8 +1708,8 @@ def download_model():
     best_model = st.session_state.best_model
     
     st.markdown(f"""
-    <div class="euron-card">
-        <div class="euron-card-header">Best Model: {best_model['name']}</div>
+    <div class="chetan-card">
+        <div class="chetan-card-header">Best Model: {best_model['name']}</div>
         <p style="color: #6B7280; font-size: 14px;">Download the trained model as a pickle file for deployment.</p>
     </div>
     """, unsafe_allow_html=True)
@@ -1726,7 +1726,7 @@ def download_model():
                     st.download_button(
                         label="Save Model File",
                         data=response.content,
-                        file_name=f"euron_model_{st.session_state.session_id[:8]}.pkl",
+                        file_name=f"chetan_model_{st.session_state.session_id[:8]}.pkl",
                         mime="application/octet-stream"
                     )
                 else:
@@ -1750,7 +1750,7 @@ def download_model():
         <pre style="color: #F3F6F8; font-family: 'JetBrains Mono', 'Courier New', monospace; margin: 0; white-space: pre-wrap;"><code style="color: #F3F6F8;">import pickle
 
 # Load the model
-with open('euron_model.pkl', 'rb') as f:
+with open('chetan_model.pkl', 'rb') as f:
     model_data = pickle.load(f)
 
 model = model_data['model']
@@ -1777,7 +1777,7 @@ def main():
             <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 1.5rem;">
                 <div style="width: 32px; height: 32px; background: #0A66C2; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: white; font-weight: 700; font-size: 16px;">E</div>
                 <div>
-                    <div style="font-weight: 600; color: #111827; font-size: 14px;">Euron ML</div>
+                    <div style="font-weight: 600; color: #111827; font-size: 14px;">chetan ML</div>
                     <div style="font-size: 11px; color: #6B7280;">v1.0.0</div>
                 </div>
             </div>
