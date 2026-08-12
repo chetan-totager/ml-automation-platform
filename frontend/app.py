@@ -1068,8 +1068,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # API Configuration
-API_URL = "http://localhost:8010"
-
+API_URL = "https://ml-automation-platform.onrender.com"
 # Session State Initialization
 if 'session_id' not in st.session_state:
     st.session_state.session_id = None
