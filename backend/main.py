@@ -1,5 +1,5 @@
 """
-EURON ML Automation - FastAPI Backend
+chetan ML Automation - FastAPI Backend
 A comprehensive automated machine learning system
 """
 
@@ -118,8 +118,8 @@ except ImportError:
 from ydata_profiling import ProfileReport
 
 app = FastAPI(
-    title="EURON ML Automation",
-    description="Automated Machine Learning System by Euron",
+    title="chetan ML Automation",
+    description="Automated Machine Learning System by chetan",
     version="1.0.0"
 )
 
@@ -351,7 +351,7 @@ def evaluate_clustering(X, labels) -> Dict:
 @app.get("/")
 async def root():
     return {
-        "message": "Welcome to EURON ML Automation API",
+        "message": "Welcome to chetan ML Automation API",
         "version": "1.0.0",
         "features": ["Automated ML Training", "EDA Reports", "Model Evaluation"]
     }
@@ -473,7 +473,7 @@ async def generate_eda_report(session_id: str, background_tasks: BackgroundTasks
         # Generate report with minimal settings for speed
         profile = ProfileReport(
             df, 
-            title="EURON ML Automation - EDA Report",
+            title="chetan ML Automation - EDA Report",
             explorative=True,
             minimal=False,
             progress_bar=False
@@ -793,7 +793,7 @@ async def download_model(session_id: str):
     return FileResponse(
         model_path, 
         media_type='application/octet-stream',
-        filename=f"euron_best_model_{session_id[:8]}.pkl"
+        filename=f"chetan_best_model_{session_id[:8]}.pkl"
     )
 
 
